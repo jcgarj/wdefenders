@@ -1,0 +1,4 @@
+services:
+#    personal.example:
+#        class: DsCorp\Personal\PersonalBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

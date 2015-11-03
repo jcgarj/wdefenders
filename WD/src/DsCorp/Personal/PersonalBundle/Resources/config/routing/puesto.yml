@@ -1,0 +1,30 @@
+puesto:
+    path:     /
+    defaults: { _controller: "PersonalBundle:puesto:index" }
+
+puesto_show:
+    path:     /{id}/show
+    defaults: { _controller: "PersonalBundle:puesto:show" }
+
+puesto_new:
+    path:     /new
+    defaults: { _controller: "PersonalBundle:puesto:new" }
+
+puesto_create:
+    path:     /create
+    defaults: { _controller: "PersonalBundle:puesto:create" }
+    methods:  POST
+
+puesto_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PersonalBundle:puesto:edit" }
+
+puesto_update:
+    path:     /{id}/update
+    defaults: { _controller: "PersonalBundle:puesto:update" }
+    methods:  [POST, PUT]
+
+puesto_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PersonalBundle:puesto:delete" }
+    methods:  [POST, DELETE]

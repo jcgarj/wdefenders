@@ -1,0 +1,17 @@
+DsCorp\Personal\PersonalBundle\Entity\avisos:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        aviso:
+            type: text
+    manyToOne:
+        usuarios:
+            targetEntity: DsCorp\Personal\PersonalBundle\Entity\usuarios
+            mappedBy: avisos
+    lifecycleCallbacks: {  }

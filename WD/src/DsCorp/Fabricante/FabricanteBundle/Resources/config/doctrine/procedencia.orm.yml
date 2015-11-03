@@ -1,0 +1,33 @@
+DsCorp\Fabricante\FabricanteBundle\Entity\procedencia:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        fechaLlegada:
+            type: datetime
+            column: fecha_llegada
+        numeroSerieFabricante:
+            type: string
+            length: '20'
+            column: numero_serie_fabricante
+        numeroSerieWarriors:
+            type: string
+            length: '20'
+            column: numero_serie_warriors
+        fechaSalida:
+            type: datetime
+            column: fecha_salida
+    manyToOne:
+        fabricante:
+            targetEntity: DsCorp\Fabricante\FabricanteBundle\Entity\fabricante
+            mappedBy: procedencia
+    oneToMany:
+        equipo:
+            targetEntity: DsCorp\Equipo\EquipoBundle\Entity\equipo
+            mappedBy: procedencia
+    lifecycleCallbacks: {  }

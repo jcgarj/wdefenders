@@ -1,0 +1,36 @@
+DsCorp\Personal\PersonalBundle\Entity\usuarios:
+    type: entity
+    table: null
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        nombreUsuario:
+            type: string
+            length: '20'
+            column: nombre_usuario
+        password:
+            type: string
+            length: '16'
+        rol:
+            type: string
+            length: '15'
+        salt:
+            type: string
+            length: 255
+    manyToOne:
+        personal:
+            targetEntity: DsCorp\Personal\PersonalBundle\Entity\personal
+            mappedBy: usuarios
+    oneToMany:
+        venta:
+            targetEntity: DsCorp\General\GeneralBundle\Entity\venta
+            mappedBy: usuarios
+    oneToMany:
+        avisos:
+            targetEntity: DsCorp\Personal\PersonalBundle\Entity\avisos
+            mappedBy: usuarios
+    lifecycleCallbacks: {  }

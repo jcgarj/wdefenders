@@ -1,0 +1,30 @@
+usuarios:
+    path:     /
+    defaults: { _controller: "PersonalBundle:usuarios:index" }
+
+usuarios_show:
+    path:     /{id}/show
+    defaults: { _controller: "PersonalBundle:usuarios:show" }
+
+usuarios_new:
+    path:     /new
+    defaults: { _controller: "PersonalBundle:usuarios:new" }
+
+usuarios_create:
+    path:     /create
+    defaults: { _controller: "PersonalBundle:usuarios:create" }
+    methods:  POST
+
+usuarios_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "PersonalBundle:usuarios:edit" }
+
+usuarios_update:
+    path:     /{id}/update
+    defaults: { _controller: "PersonalBundle:usuarios:update" }
+    methods:  [POST, PUT]
+
+usuarios_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "PersonalBundle:usuarios:delete" }
+    methods:  [POST, DELETE]

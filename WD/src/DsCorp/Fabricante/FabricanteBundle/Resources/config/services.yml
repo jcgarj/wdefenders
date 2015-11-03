@@ -1,0 +1,4 @@
+services:
+#    fabricante.example:
+#        class: DsCorp\Fabricante\FabricanteBundle\Example
+#        arguments: [@service_id, "plain_value", %parameter%]

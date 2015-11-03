@@ -1,0 +1,10 @@
+avisos:
+    path:     /
+    defaults: { _controller: "PersonalBundle:avisos:index" }
+
+avisos_show:
+    path:     /{id}/show
+    defaults: { _controller: "PersonalBundle:avisos:show" }
+
+
+

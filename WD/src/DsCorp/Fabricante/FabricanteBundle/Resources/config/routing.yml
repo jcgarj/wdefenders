@@ -1,0 +1,15 @@
+fabricante_fabricante:
+    resource: "@FabricanteBundle/Resources/config/routing/fabricante.yml"
+    prefix:   /fabricante
+
+fabricante_procedencia:
+    resource: "@FabricanteBundle/Resources/config/routing/procedencia.yml"
+    prefix:   /procedencia
+
+fabricante_direccion_fabricante:
+    resource: "@FabricanteBundle/Resources/config/routing/direccion_fabricante.yml"
+    prefix:   /direccion_fabricante
+
+fabricante_homepage:
+    path:     /hello/{name}
+    defaults: { _controller: FabricanteBundle:Default:index }
